@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="KeywordDrivenSuite">
+  <test name="KeywordTest">
+    <classes>
+      <class name="com.tops.ExcelMaven.keyworddriven.tests.KeywordTest"/>
+    </classes>
+  </test>
+</suite>  
