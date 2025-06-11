@@ -1,0 +1,6 @@
+2025-06-04 10:16:50 [main] INFO  com.tops.ExcelMaven.LoginTest - Testing start
+2025-06-04 10:16:50 [main] INFO  com.tops.ExcelMaven.LoginTest - Chrome browser launched
+2025-06-04 10:16:51 [main] INFO  com.tops.ExcelMaven.LoginTest - Login tested user1 pass1
+2025-06-04 10:16:52 [main] INFO  com.tops.ExcelMaven.LoginTest - Testing start
+2025-06-04 10:16:52 [main] INFO  com.tops.ExcelMaven.LoginTest - Chrome browser launched
+2025-06-04 10:16:53 [main] INFO  com.tops.ExcelMaven.LoginTest - Login tested user2 pass2
