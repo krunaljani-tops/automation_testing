@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-23T08:13:56 IST" name="Default suite" finished-at="2025-06-23T08:14:19 IST" duration-ms="22125">
+    <groups>
+    </groups>
+    <test started-at="2025-06-23T08:13:56 IST" name="Default test" finished-at="2025-06-23T08:14:19 IST" duration-ms="22125">
+      <class name="GridTest">
+        <test-method signature="testOnChrome()[pri:0, instance:GridTest@9f116cc]" started-at="2025-06-23T08:13:57 IST" name="testOnChrome" finished-at="2025-06-23T08:14:07 IST" duration-ms="10693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnChrome -->
+        <test-method signature="testOnFirefox()[pri:0, instance:GridTest@9f116cc]" started-at="2025-06-23T08:14:07 IST" name="testOnFirefox" finished-at="2025-06-23T08:14:19 IST" duration-ms="11328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnFirefox -->
+      </class> <!-- GridTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
