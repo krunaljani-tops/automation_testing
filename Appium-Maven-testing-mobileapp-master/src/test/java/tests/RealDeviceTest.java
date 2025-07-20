@@ -6,7 +6,9 @@ import java.net.URL;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.MobileElement;
@@ -16,14 +18,17 @@ import io.appium.java_client.remote.MobileCapabilityType;
 public class RealDeviceTest {
 	AndroidDriver<MobileElement> driver;
 
-    @BeforeClass
+    @BeforeTest
     public void setup() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, "10BD7K20FC000KN");
         caps.setCapability(MobileCapabilityType.APP, "C:\\Users\\Lenovo\\Downloads\\Appium-Maven-testing-mobileapp-master\\Appium-Maven-testing-mobileapp-master\\com.neumorphic.calculator_2.apk"); // replace with your APK path
-
+       // caps.setCapability("appPackage", "com.bt.bms");  // <<< Confirm this with `adb shell dumpsys window windows`
+        //caps.setCapability("appActivity", "com.movie.bms.login.view.LauncherBaseActivity"); 
+       // caps.setCapability("appActivity","com.bt.bms.ui.splash.SplashActivity");
+        //caps.setCapability("noReset", true);
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/"), caps);
         System.out.println("Before function loaded");
     }
@@ -61,7 +66,7 @@ public class RealDeviceTest {
     	System.out.println("Testing  method");
     }
 
-    @AfterClass
+   @AfterTest
     public void tearDown() {
         if (driver != null) {
             driver.quit();
