@@ -12,7 +12,7 @@ public class FindAllLinks {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String path=System.getProperty("user.dir");
-		String fullpath=path+"\\src\\main\\java\\webdriver\\chromedriver.exe";
+		String fullpath=path+"\\src\\main\\java\\webdriver\\chromedriver_137.exe";
 		System.out.println("full path "+fullpath);
 		System.setProperty("webdriver.chrome.driver",fullpath);
 		

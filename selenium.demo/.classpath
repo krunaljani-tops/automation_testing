@@ -53,6 +53,7 @@
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="lib" path="C:/Users/Lenovo/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar" sourcepath="C:/Users/Lenovo/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1-sources.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>

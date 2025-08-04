@@ -13,7 +13,7 @@ public class QA_Automate_Form {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String path=System.getProperty("user.dir");
-		String fullpath=path+"\\src\\main\\java\\webdriver\\chromedriver.exe";
+		String fullpath=path+"\\src\\main\\java\\webdriver\\chromedriver_137.exe";
 		System.out.println("full path "+fullpath);
 		System.setProperty("webdriver.chrome.driver",fullpath);
 		
@@ -23,7 +23,7 @@ public class QA_Automate_Form {
 //		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 
         // Set timeout
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         // Maximize window and open the form URL
         driver.manage().window().maximize();
@@ -80,7 +80,7 @@ public class QA_Automate_Form {
         address.sendKeys("123 Main St, Cityville");
 
         // 11. State - By.xpath
-        WebElement state = driver.findElement(By.xpath("//*[@id=\"state\"]/div/div[1]/div[1]"));
+        WebElement state = driver.findElement(By.xpath("//html/body/div[2]/div/div/div/div[2]/div[2]/form/div[10]/div[2]/div/div/div[1]/div[1]"));
         state.click();
         WebElement selectState = driver.findElement(By.xpath("//div[text()='NCR']"));
         selectState.click();

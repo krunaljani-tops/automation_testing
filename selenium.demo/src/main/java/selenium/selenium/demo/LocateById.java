@@ -12,7 +12,7 @@ public class LocateById {
 		String path=System.getProperty("user.dir");
 		String fullpath=path+"\\src\\main\\java\\webdriver\\chromedriver.exe";
 		System.out.println("full path "+fullpath);
-		System.setProperty("webdriver.chrome.driver",fullpath);
+		System.setProperty("webdriver.chrome.driver","C:/Users/Lenovo/Downloads/chromedriver-win64/chromedriver-win6/chromedriver.exe");
 
 		//System.setProperty("webdriver.chrome.driver", "C:/Users/user/Downloads/Automation_testing-20250505T094201Z-1-001/Automation_testing/selenium.demo/src/main/java/webdriver/chromedriver.exe");
 		 WebDriver driver = new ChromeDriver();

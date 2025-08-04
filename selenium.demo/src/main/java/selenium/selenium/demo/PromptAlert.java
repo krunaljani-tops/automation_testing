@@ -9,7 +9,7 @@ public class PromptAlert {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String path=System.getProperty("user.dir");
-		String fullpath=path+"\\src\\main\\java\\webdriver\\chromedriver.exe";
+		String fullpath=path+"\\src\\main\\java\\webdriver\\chromedriver_137.exe";
 		System.out.println("full path "+fullpath);
 		System.setProperty("webdriver.chrome.driver",fullpath);
 		
@@ -20,7 +20,7 @@ public class PromptAlert {
 		driver.findElement(By.xpath("//*[@id=\"content\"]/div/ul/li[3]/button")).click();
 		System.out.println("Alert Text "+driver.switchTo().alert().getText());
 		driver.switchTo().alert().sendKeys("Hello");
-		driver.switchTo().alert().accept();//OK button
+		//driver.switchTo().alert().accept();//OK button
 		
 		//driver.switchTo().alert().dismiss(); //cancel
 
